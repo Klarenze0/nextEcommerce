@@ -1,12 +1,10 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
-const getSalesData = () => {
-  
-}
 
 const admin = () => {
+
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center">
         <DashboardCard title="Sales" subtitle="Lorem ipsum" body="test"/>
         <DashboardCard title="Sales" subtitle="Lorem ipsum" body="test"/>
         <DashboardCard title="Sales" subtitle="Lorem ipsum" body="test"/>
@@ -23,7 +21,7 @@ type DashboardCardProps = {
 const DashboardCard = ({title, subtitle, body}: DashboardCardProps) => {
 
   return (
-        <Card>
+        <Card className="w-full max-w-sm">
         <CardHeader>
           <CardTitle>{title}</CardTitle>
           <CardDescription>{subtitle}</CardDescription>
